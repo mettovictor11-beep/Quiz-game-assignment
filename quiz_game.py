@@ -42,7 +42,7 @@ questions = [
     }
 ]
 
-
+score = 0
 
 for question in questions:
     print("\n------------------------------")
@@ -55,7 +55,14 @@ for question in questions:
 
     if user_answer.upper() == question["answer"]:
     print("Correct! Well done!")
+    score += 1
 else:
     print("Wrong answer!")
     print(f"The correct answer is {question['answer']}")
+
+
+    print("\n==============================")
+print("         QUIZ RESULTS")
+print("==============================")
+print(f"Your final score is: {score}/{len(questions)}")
 
