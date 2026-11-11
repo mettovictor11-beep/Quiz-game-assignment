@@ -39,6 +39,16 @@ questions = [
             "D": "<!--"
         },
         "answer": "B"
+    },
+    {
+        "question": "What is the output of print(2**3)?",
+        "options": {
+            "A": "6",
+            "B": "8",
+            "C": "9",
+            "D": "12"
+        },
+        "answer": "B"
     }
 ]
 
@@ -60,8 +70,18 @@ for question in questions:
         print("Wrong answer!")
         print(f"The correct answer is {question['answer']}")
 
+percentage = (score / len(questions)) * 100 if questions else 0
+
 print("\n==============================")
 print("         QUIZ RESULTS")
 print("==============================")
 print(f"Your final score is: {score}/{len(questions)}")
+print(f"Your percentage: {percentage:.1f}%")
+
+if percentage >= 80:
+    print("Excellent! Keep it up!")
+elif percentage >= 50:
+    print("Good! You are making progress!")
+else:
+    print("Try Again! You can do better!")
 
