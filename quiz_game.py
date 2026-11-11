@@ -53,5 +53,9 @@ for question in questions:
 
     user_answer = input("Your answer (A, B, C or D): ")
 
-    print(f"You selected: {user_answer}")
+    if user_answer.upper() == question["answer"]:
+    print("Correct! Well done!")
+else:
+    print("Wrong answer!")
+    print(f"The correct answer is {question['answer']}")
 
