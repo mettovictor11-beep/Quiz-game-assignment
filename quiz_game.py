@@ -54,14 +54,13 @@ for question in questions:
     user_answer = input("Your answer (A, B, C or D): ")
 
     if user_answer.upper() == question["answer"]:
-    print("Correct! Well done!")
-    score += 1
-else:
-    print("Wrong answer!")
-    print(f"The correct answer is {question['answer']}")
+        print("Correct! Well done!")
+        score += 1
+    else:
+        print("Wrong answer!")
+        print(f"The correct answer is {question['answer']}")
 
-
-    print("\n==============================")
+print("\n==============================")
 print("         QUIZ RESULTS")
 print("==============================")
 print(f"Your final score is: {score}/{len(questions)}")
