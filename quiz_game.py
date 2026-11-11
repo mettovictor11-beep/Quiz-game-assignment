@@ -1,3 +1,6 @@
+import random
+
+
 
 print("==============================")
 print("       PYTHON QUIZ MASTER")
@@ -53,6 +56,8 @@ questions = [
 ]
 
 score = 0
+
+random.shuffle(questions)
 
 for question in questions:
     print("\n------------------------------")
