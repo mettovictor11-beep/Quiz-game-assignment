@@ -43,9 +43,15 @@ questions = [
 ]
 
 
+
 for question in questions:
     print("\n------------------------------")
     print(question["question"])
 
     for option, answer in question["options"].items():
         print(f"{option}. {answer}")
+
+    user_answer = input("Your answer (A, B, C or D): ")
+
+    print(f"You selected: {user_answer}")
+
